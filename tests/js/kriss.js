@@ -3,15 +3,15 @@
  *
  * @author Mikael Roos (me@mikaelroos.se)
  */
-window.Mos = (function(window, document, undefined ) {
-  var Mos = {};
+window.km = (function(window, document, undefined ) {
+  var km = {};
 
 
   /**
    * Display the type of the object
    * @param the object to check
    */
-  Mos.reflection = function (obj) {
+  km.reflection = function (obj) {
    
     // if(typeof obj === 'undefined')  console.log("is type: Undefined");
     // if(typeof obj === 'boolean')    console.log("is type: Boolean");
@@ -68,7 +68,7 @@ window.Mos = (function(window, document, undefined ) {
    * Display properties of an object
    * @param the object to show
    */
-  Mos.properties = function (obj) {
+  km.properties = function (obj) {
     if(typeof obj !== 'object') {
       console.log('Not an object.');
     } else {
@@ -86,7 +86,7 @@ window.Mos = (function(window, document, undefined ) {
    * Dump own properties of an object
    * @param the object to show
    */
-  Mos.dump = function (obj) {
+  km.dump = function (obj) {
     if(typeof obj !== 'object') {
       console.log('Not an object.');
     } else {
@@ -104,7 +104,7 @@ window.Mos = (function(window, document, undefined ) {
    * @param the object to show
    * @returns string
    */
-  Mos.dumpAsString = function (obj) {
+  km.dumpAsString = function (obj) {
     var s = '\n';
     for (var prop in obj) {
       if (obj.hasOwnProperty(prop)) {
@@ -119,7 +119,7 @@ window.Mos = (function(window, document, undefined ) {
    * Delete cached LESS files from local storage.
    * @param regular expressen to search for, for example /style.less/
    */
-  Mos.deleteLESSFromLocalStorage = function (which) {
+  km.deleteLESSFromLocalStorage = function (which) {
     for (var item in window.localStorage) {
       if (item.match(which)) {
         console.log('Deleted ' + item + ':' + (delete window.localStorage[item]));
@@ -134,7 +134,7 @@ window.Mos = (function(window, document, undefined ) {
    * @param max the largest possible number
    * @returns a random number where min >= number <= max
    */
-  Mos.random = function (min, max) {
+  km.random = function (min, max) {
     return Math.floor(Math.random()*(max+1-min)+min);
   };
 
@@ -144,7 +144,7 @@ window.Mos = (function(window, document, undefined ) {
    * http://stackoverflow.com/questions/442404/dynamically-retrieve-html-element-x-y-position-with-javascript
    * @param el the element.
    */
-  Mos.getOffset = function ( el ) {
+  km.getOffset = function ( el ) {
       var _x = 0;
       var _y = 0;
       while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
@@ -157,6 +157,6 @@ window.Mos = (function(window, document, undefined ) {
   //var x = getOffset( document.getElementById('yourElId') ).left; 
 
   // Expose public methods
-  return Mos;
+  return km;
   
 })(window, window.document); 

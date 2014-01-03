@@ -14,16 +14,16 @@ $(document).ready(function(){
   myBall = {};
 
   myBall.image = 'img/black_ball_64_64.png';
-  myBall.position = {x:10, y:10}
-  myBall.dimension = {w:64, h:64}
+  myBall.position = {x:10, y:10};
+  myBall.dimension = {w:64, h:64};
   
-  pos = Mos.getOffset(flash);
+  pos = km.getOffset(flash);
   myBall.canvas = {
     x: pos.left,
     y: pos.top,
     x2: pos.left + flash.clientWidth - myBall.dimension.w,
     y2: pos.top + flash.clientHeight - myBall.dimension.h
-  }
+  };
   
   console.log(myBall.position.x); // prints out 10
   
