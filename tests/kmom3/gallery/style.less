@@ -1,0 +1,71 @@
+/**
+ * Import base style
+ */
+@import "../../style/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+// LESS can go here
+@green:#46a546;
+@red:#9d261d;
+@grey:#555;
+@greyLight:#999;
+@greyLighter:#eee;
+
+.green{
+  color:@green;
+}
+.greenBackground{
+  background-color:@green;
+}
+.red{
+  color:@red;
+}
+
+#box1{
+  overflow:hidden;
+}
+
+img{
+  // float:left;
+  background-color:lighten(@greyLighter,5%);
+  height:80px;
+  width:80px;
+  border:1px solid @greyLight;
+  padding:0.2em;
+  margin:0.6em;
+  .border-radius(10px);
+  .box-shadow();
+}
+
+
+/** ------------------------------------
+ * CSS3 mixins.
+ */
+.border-radius(@radius:5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.box-shadow(@shadow:5px 5px 5px 5px @grey) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+.gallery{
+  width:80%;
+}
+
+.gallery-current{
+  overflow:hidden;
+  background:@greyLighter;
+}
+
+.current{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
