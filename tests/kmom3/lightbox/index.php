@@ -1,5 +1,5 @@
 <?php 
-$title = 'Catch an Event'; 
+$title = 'Lightbox'; 
 include(__DIR__ . '/../../src/header.php');
 ?>
 

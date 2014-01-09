@@ -1,5 +1,5 @@
 <?php 
-$title = 'Catch an Event'; 
+$title = 'Resize Elements'; 
 include(__DIR__ . '/../../src/header.php');
 ?>
 

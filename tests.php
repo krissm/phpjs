@@ -42,7 +42,7 @@ $data['main'] = <<<EOD
 			<li><a href='tests/kmom3/lightbox/index.php' target='blank'>Lightbox with jQuery</a></li>
 			<li><a href='tests/kmom3/gallery/index.php' target='blank'>Gallery with jQuery</a></li>
 			<li><a href='tests/kmom3/slideshow/index.php' target='blank'>Slideshow with jQuery</a></li>
-		
+			<li><a href='tests/kmom3/plugin/index.php' target='blank'>Plugin Demo</a></li>
 		</ul>
 </div>
 EOD;

@@ -1,5 +1,5 @@
 <?php 
-$title = 'Catch an Event'; 
+$title = 'Slide and Fade'; 
 include(__DIR__ . '/../../src/header.php');
 ?>
 

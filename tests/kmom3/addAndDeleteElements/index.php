@@ -1,5 +1,5 @@
 <?php 
-$title = 'Catch an Event'; 
+$title = 'Add and Delete Elements'; 
 include(__DIR__ . '/../../src/header.php');
 ?>
 

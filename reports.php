@@ -73,6 +73,19 @@ $data['main'] = <<<EOD
 			<li>getOffset: get the position of an element (which you send in as a parameter). It returns an object with the properties top and left. </li>
 		</ul>
 	</article>
+	<article class="report">
+		<h2>Kmom03: Grunderna i jQuery</h2>
+		<h3>Vad tycker du om jQuery, hur känns det?</h3>
+		<p>I really like jQuery and I don’t know how I could have done these tasks without it. It is an improvement of javascript no doubt. However, it feels like I’m trying to learn two programming languages at the same time. So even though it makes it easier to program it also makes it harder to master javascript.</p>
+		<p>I’m only beginning to get my head around the jQuery object. I understand that it has all the jQuery methods and that it can store DOM elements in a array like fashion. I have tried to search for where in the jQuery object these elements are stored and how it looks, but find no easy to understand explanations. It uses/creates some properties called ‘expando’ and ‘data maps’… but I think this will have to wait until later on.</p>
+		<h3>Vilka är dina erfarenheter av jQuery inför detta kursmoment?</h3>
+		<p>I have never used it before.</p>
+		<h3>Berätta om din plugin.</h3>
+		<p>My plugin is called 'SwitchSlide'. SwitchSlide makes it really easy to create and group together any number of slideshows and let them take turn at being active. This can be useful if you want the user to focus on one slideshow at the time. You can find the homepage of the plugin <a href="http://www.student.bth.se/~krmc12/phpjs/kmom3/phpjs/tests/kmom3/plugin/index.php" target='blank'>here</a><p>
+		<h3>Exercises</h3>
+		<p>The exercises can be found <a href=” http://www.student.bth.se/~krmc12/phpjs/kmom3/phpjs/tests.php” target='blank'>here</a></p>
+		<p>I solved most of them without looking at the example codes which I’m really proud of. I could mention many difficulties, problems, solutions, and experiences but nothing in particular stands out.</p>
+	</article>
 EOD;
 
 // Hand over to the template engine.
