@@ -39,7 +39,7 @@
       <a href="index.php">
         <img class="site-logo" src="img/mvclogo.jpg" alt="logo" width="120" height="120" />
       </a>
-      <p class="site-title">PHP&JS</p>
+      <p class="site-title">PHP &amp JS</p>
       <p class="site-slogan">A PHP and JS-inspired story</p>
     </div>
     <?=getHTMLForNavigation($navbar, "navbar")?>

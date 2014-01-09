@@ -83,7 +83,7 @@ $data['main'] = <<<EOD
 		<h3>Berätta om din plugin.</h3>
 		<p>My plugin is called 'SwitchSlide'. SwitchSlide makes it really easy to create and group together any number of slideshows and let them take turn at being active. This can be useful if you want the user to focus on one slideshow at the time. You can find the homepage of the plugin <a href="http://www.student.bth.se/~krmc12/phpjs/kmom3/phpjs/tests/kmom3/plugin/index.php" target='blank'>here</a><p>
 		<h3>Exercises</h3>
-		<p>The exercises can be found <a href=” http://www.student.bth.se/~krmc12/phpjs/kmom3/phpjs/tests.php” target='blank'>here</a></p>
+		<p>The exercises can be found <a href="http://www.student.bth.se/~krmc12/phpjs/kmom3/phpjs/tests.php" target='blank'>here</a></p>
 		<p>I solved most of them without looking at the example codes which I’m really proud of. I could mention many difficulties, problems, solutions, and experiences but nothing in particular stands out.</p>
 	</article>
 EOD;
