@@ -8,7 +8,7 @@ include("config.php");
 $data['title'] = "Reports";
 $data['meta_description'] = "All reports collected on one page.";
 $data['main'] = <<<EOD
-<h1>Reports</h1>
+	<h1>Reports</h1>
 	<article class="report">
 		<h2>Kmom01: Getting Started with JS</h2>
 

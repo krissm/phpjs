@@ -17,10 +17,6 @@ $(document).ready(function(){
 	    	  initCart();
 		    }
 	  });
-	  //TODO:change title and highlight nav tab
-	  
-	  
-	  
   });
 
   // Init the shopping cart
