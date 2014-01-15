@@ -1,0 +1,51 @@
+/**
+ * Import base style
+ */
+@import "../../style/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+#flash{
+  overflow:hidden;
+}
+
+table{width: auto;
+  td{vertical-align: top;}
+}
+
+#cart{
+  border: 1px solid #999;
+  border-radius:4px;
+  padding:4px;
+  width: 300px;
+  min-height:200px;
+  float:right;
+  font-size: smaller;
+  h2{
+    border-bottom:1px solid #ccc;
+    font-weight: bold;
+    margin-bottom:@magic-number/2;
+  }
+  #status{
+    font-style: italic;
+  }
+} 
+
+
+/** ------------------------------------
+ * CSS3 mixins.
+ */
+.border-radius(@radius:5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.box-shadow(@shadow:5px 5px 5px 5px @grey) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+

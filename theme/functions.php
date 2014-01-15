@@ -10,7 +10,7 @@ function getHTMLForNavigation($items, $id) {
   $p = basename($_SERVER['SCRIPT_NAME'], '.php');
   foreach($items as $key => $item) {
     $selected = ($p == $key) ? " class='selected'" : null; 
-    @$html .= "<a href='{$item['url']}'{$selected}>{$item['text']}</a>\n";
+    @$html .= "<a id='{$item['id']}' href='{$item['url']}'{$selected}>{$item['text']}</a>\n";
   }
   return "<nav id='$id'>\n{$html}</nav>\n";
 }

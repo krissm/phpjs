@@ -15,12 +15,24 @@
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
   <title><?=$title?></title>
+  
   <link rel="stylesheet" href="css/mystyle.css">
+  <?=isset($css) ? $css : null ?>
+  
+<!--   test for bookstore2 -->
+  <link href='css/style.less' type='text/css' rel='stylesheet/less'>
+  <script src='js/less.min.js'></script>
+	<script src='js/modernizr.js'></script>
+  
+<!-- 	<link rel="stylesheet" type="text/css" href="bookstore/one-page-checkout-using-ajax/style.less" > -->
+  
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ 
   		 <script src="js/libs/modernizr-2.5.0.min.js"></script>-->
+  <?=isset($headjs) ? $headjs : null ?>
+  
   <style>
     <?=$style?>
   </style>
@@ -46,7 +58,13 @@
   </header>
   
   <div id="main" role="main">
-    <?=$main?>
+    <?php
+    if ($main == "bookstore"){
+    	include('bookstore/shopping-cart-using-jquery-ajax/index.php');
+    }else{
+			echo $main;
+		}
+    ?>
   </div>
 
   <footer id="footer">
@@ -88,6 +106,14 @@
 	
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
+  
+<!--   test for bookstore2 -->
+  <script src='js/jquery.js'></script>
+	<script src='js/kriss.js'></script>
+	<script src='js/main.js'></script>
+	
+  
+  <?=isset($footerjs) ? $footerjs : null ?>
 <!--   <script src="js/script.js"></script> -->
   <!-- end scripts -->
 

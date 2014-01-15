@@ -1,0 +1,34 @@
+/**
+ * Import base style
+ */
+@import "../../style/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+#flash{.clearfix();background-color:#fff;
+  img{float:right;
+    &:hover{cursor:pointer;}
+  }
+}
+
+#quote{font-size: 2em;}
+
+
+
+/** ------------------------------------
+ * CSS3 mixins.
+ */
+.border-radius(@radius:5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.box-shadow(@shadow:5px 5px 5px 5px @grey) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+

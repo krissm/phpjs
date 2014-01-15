@@ -73,6 +73,7 @@ $data['main'] = <<<EOD
 			<li>getOffset: get the position of an element (which you send in as a parameter). It returns an object with the properties top and left. </li>
 		</ul>
 	</article>
+	
 	<article class="report">
 		<h2>Kmom03: Grunderna i jQuery</h2>
 		<h3>Vad tycker du om jQuery, hur känns det?</h3>
@@ -85,6 +86,24 @@ $data['main'] = <<<EOD
 		<h3>Exercises</h3>
 		<p>The exercises can be found <a href="http://www.student.bth.se/~krmc12/phpjs/kmom3/phpjs/tests.php" target='blank'>here</a></p>
 		<p>I solved most of them without looking at the example codes which I’m really proud of. I could mention many difficulties, problems, solutions, and experiences but nothing in particular stands out.</p>
+	</article>
+
+	<article class="report">
+		<h2>Kmom4 – Ajax and JSON with jQuery</h2>
+		<p>I spend five days on this task because everything that could go wrong went wrong. But I learnt a lot of things which I’m supposed to know by now so all in all it was really good practice.</p>
+		<p>First I did the tasks mainly by copying code (<a href='http://www.student.bth.se/~krmc12/phpjs/kmom4/phpjs/tests.php'>http://www.student.bth.se/~krmc12/phpjs/kmom4/phpjs/tests.php</a>). Then I moved the shop and checkout folders into a new folder which I named ‘bookstore’ and tried to integrate them into my ‘me page’. When the user clicked on the ‘bookstore’ tab I included the html code for the shop and some js code into the body, some js in the head, and some css in the head as well. This worked alright. When I ‘checked out’ I had no problem including the new html and the new js and scc (less) files. But the problem was that the css and the js were not binding to the elements which had been included with Ajax.</p> 
+		<p>I thought I had a solution for the js file after finding the <code>$.getScript()</code> method since it did bind my newly included elements to my newly included html elements, but I noticed that the file could not be found anywhere when I 'inspect elements' or when look under the 'sources' tab in the browser (chrome), so there is no way to take away or debug the code.</p>
+		<p>After searching and asking in forums I feel like no one else tries to swap css and js files with ajax calls so I decided to reorganize my code. First I just added all css (less) into the file which was included from the beginning and I got it all to work. But it looked very messy so I decided to have another go, and so I created ‘bookstore2’.</p>
+		<p>This time I put all js and css code into the main html file from the beginning and to ‘up the challenge’ I decided to include all html code with Ajax. So when the user clicks on ‘Bookstore2’ in the navigation bar on my ‘my page’ the title is change, the right navigation tab is highlighted, and then the html code for the shop is inserted with an Ajax call. But here the problem came back; the newly inserted elements did not bind to js code.</p>
+		<p>I learnt that you can use the jQuery ‘on’ function to bind elements that are dynamically added so instead of this:<br>
+		<code>$('.purchase').click( function() {…};</code><br>
+		I had to do this:<br>
+		<code>$(document).on('click', '.purchase', function() {…};</code><br>
+		First I put the initCart method inside this function but outside the ajax call which I learned didn’t work. But after moving it into the ‘success’ function it worked fine.</p> 
+		<p>Another big problem I had was trying to make the payment be about the whole sum. I added the sum to the hidden input element in the checkout form and then when submitting the form I got the sum from the <code>$_POST['payment']</code> and included it in the ‘cc_form’ but for quite some time I didn’t see that the ‘cc_form’ was included in two places which created a very odd behaviour for quite some time, before I found it and included the sum variable above both.</p>
+		<p>I had a few frustrating hours trying to include both ‘bookstores’ in my ‘me page but since all js doubled up and clashed it was not so easy. I tried to create separate sessions but I had to give up after a while since I was not willing to change all the ‘id’s and classes which was required to make the js run properly. So in the end I commented our ‘bookstore (1)’.</p>
+		<p>I’m starting to get my head around Ajax with jQuery, and it all makes sense. It is really hard to debug though. I have never used Ajax before so a whole new world has opened up to me, and I love it. I probably do the extra task and package my code but I have spent too much time on this course moment and unfortunately I have to move on. But I will come back and master that skill later no doubt. </p>
+		<p>Since my ‘bookstore’ tab creates the bookstore with Ajax I have no way of linking directly to it, which I realize now might be a weakness of my strategy. So you have to go to my me page an click on the ‘bookstore2’ tab to see my store.</p>
 	</article>
 EOD;
 

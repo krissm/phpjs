@@ -44,8 +44,8 @@ $srcUrl = '../../../src/source.php?dir=' . end($d) . '&amp;file='.basename($_SER
   <a href='http://www.w3schools.com/'>w3schools</a>
 </nav>
 </footer>
-<script src='../../js/jquery.js'></script>
-<script src='../../js/kriss.js'></script>
+<script src='../../../js/jquery.js'></script>
+<script src='../../../js/kriss.js'></script>
 <script src='main.js'></script>
 </body>
 </html>

@@ -19,8 +19,10 @@ $data['navkmom'] = array(
 // The contents of the navbar
 $data['navbar'] = array(
   'index'         => array('text'=>'Me',  'url'=>'index.php'),
-  'redovisning'   => array('text'=>'Reports',  'url'=>'reports.php'),
+  'reports'			  => array('text'=>'Reports',  'url'=>'reports.php'),
   'tests'					=> array('text'=>'Tests', 		'url'=>'tests.php'),
+	//'bookstore'     => array('text'=>'Bookstore',  'url'=>'bookstore.php'),
+	'bookstore2'    => array('text'=>'Bookstore2',  'url'=>'', 'id' => 'bookstore2'),
   'empty'         => array('text'=>'Empty page', 'url'=>'empty.php'),
   'viewsource'    => array('text'=>'Source Code', 'url'=>'viewsource.php'),
 );
