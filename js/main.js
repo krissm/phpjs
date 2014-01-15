@@ -123,7 +123,6 @@ $(document).ready(function(){
 	    dataType: 'json',
 	    success: function(data){
 	      $('#sum')
-	      .empty()
 	      .html(data.sum);
 	      console.log('Ajax request returned successfully. Sum updated.');    
 	    },
